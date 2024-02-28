@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anta", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    gap:20px;
+}
+h1{
+    color: white;
+    font-size: 24px;
+
+}
+.calculator{
+  
+    border: 1px solid lightgray;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+ 
+}
+.calculator .display{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    padding-top: 4px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background: #202020;
+    padding: 0px 6px;
+    border-radius: 4px;
+   
+}
+.buttons {
+    display: grid;
+   
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+.buttons .butt{
+    height: 40px;
+    border: 1px solid rgb(169, 169, 169);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.buttons .butt:hover{
+    background-color: rgb(47, 47, 47);
+}
+.buttons .butt.operator{
+    background-color: rgb(232, 45, 3);
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+.buttons .butt.operator:hover{
+    background-color: rgb(232, 72, 36);
+    
+
+}
